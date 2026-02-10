@@ -1,0 +1,5 @@
+<map id="ShowHint.OnMouseDown" name="ShowHint.OnMouseDown">
+<area shape="rect" id="Node000001" title="Metodo chiamato automaticamente da Unity quando l&#39;utente clicca sul GameObject con il mouse." alt="" coords="5,5,178,32"/>
+<area shape="rect" id="Node000002" href="$class_show_hint.html#a8b3231ac6f84c60451d9cc936b989c4a" title="Mostra il pannello dei suggerimenti e riproduce un suono se disponibile." alt="" coords="226,5,398,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,16,210,16,210,21,178,21"/>
+</map>

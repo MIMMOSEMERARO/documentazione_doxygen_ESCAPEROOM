@@ -1,0 +1,5 @@
+<map id="ShowHint.ShowHintPanel" name="ShowHint.ShowHintPanel">
+<area shape="rect" id="Node000001" title="Mostra il pannello dei suggerimenti e riproduce un suono se disponibile." alt="" coords="226,5,398,32"/>
+<area shape="rect" id="Node000002" href="$class_show_hint.html#a6c11959c8c242a40aeee5cee21a33a38" title="Metodo chiamato automaticamente da Unity quando l&#39;utente clicca sul GameObject con il mouse." alt="" coords="5,5,178,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,21,178,21,178,16,210,16"/>
+</map>
