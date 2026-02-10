@@ -1,0 +1,164 @@
+\doxysection{sfxmanager Class Reference}
+\hypertarget{classsfxmanager}{}\label{classsfxmanager}\index{sfxmanager@{sfxmanager}}
+
+
+Gestisce la riproduzione degli effetti sonori (SFX). Assicura la presenza di un Audio\+Source e permette di riprodurre suoni con una leggera variazione di pitch per maggiore naturalezza.  
+
+
+
+
+Inheritance diagram for sfxmanager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classsfxmanager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sfxmanager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classsfxmanager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classsfxmanager_af50259142fe2785706950fb8bc1d6dc9}{Play\+SFX}} ()
+\begin{DoxyCompactList}\small\item\em Riproduce il suono configurato con una leggera variazione casuale del pitch. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsfxmanager_af0ed3c5e51f3735fa4566caef1ba1f30}{Play\+SFX}} (Audio\+Clip clip)
+\begin{DoxyCompactList}\small\item\em Riproduce immediatamente un Audio\+Clip passato come parametro. Utile per riprodurre suoni dinamicamente da codice. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Audio\+Clip \mbox{\hyperlink{classsfxmanager_a0ecaf5b34238d130b827101ef9363f87}{sound\+Effect}}
+\begin{DoxyCompactList}\small\item\em Clip audio utilizzata come effetto sonoro principale. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classsfxmanager_ab9d080a5aefe41f60257ee78f86059a3}{pitch\+Variation}} = 0.\+1f
+\begin{DoxyCompactList}\small\item\em Valore massimo di variazione del pitch applicato casualmente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classsfxmanager_a10c5755ab0d767dd629a951a1e6b066f}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Inizializzazione del gestore audio. Recupera l\textquotesingle{}Audio\+Source e collega automaticamente il metodo Play\+SFX al bottone UI, se presente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Audio\+Source \mbox{\hyperlink{classsfxmanager_a051a21d27d1db43f91c370c04574c1c2}{audio\+Source}}
+\begin{DoxyCompactList}\small\item\em Riferimento all\textquotesingle{}Audio\+Source associato all\textquotesingle{}oggetto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Gestisce la riproduzione degli effetti sonori (SFX). Assicura la presenza di un Audio\+Source e permette di riprodurre suoni con una leggera variazione di pitch per maggiore naturalezza. 
+
+\label{doc-func-members}
+\Hypertarget{classsfxmanager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsfxmanager_a10c5755ab0d767dd629a951a1e6b066f}\index{sfxmanager@{sfxmanager}!Awake@{Awake}}
+\index{Awake@{Awake}!sfxmanager@{sfxmanager}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily \label{classsfxmanager_a10c5755ab0d767dd629a951a1e6b066f} 
+void sfxmanager.\+Awake (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Inizializzazione del gestore audio. Recupera l\textquotesingle{}Audio\+Source e collega automaticamente il metodo Play\+SFX al bottone UI, se presente. 
+
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{dot_inline_dotgraph_6}}
+\end{DoxyImageNoCaption}
+ Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classsfxmanager_a10c5755ab0d767dd629a951a1e6b066f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classsfxmanager_af50259142fe2785706950fb8bc1d6dc9}\index{sfxmanager@{sfxmanager}!PlaySFX@{PlaySFX}}
+\index{PlaySFX@{PlaySFX}!sfxmanager@{sfxmanager}}
+\doxysubsubsection{\texorpdfstring{PlaySFX()}{PlaySFX()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classsfxmanager_af50259142fe2785706950fb8bc1d6dc9} 
+void sfxmanager.\+Play\+SFX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Riproduce il suono configurato con una leggera variazione casuale del pitch. 
+
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{dot_inline_dotgraph_7}}
+\end{DoxyImageNoCaption}
+ Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classsfxmanager_af50259142fe2785706950fb8bc1d6dc9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classsfxmanager_af0ed3c5e51f3735fa4566caef1ba1f30}\index{sfxmanager@{sfxmanager}!PlaySFX@{PlaySFX}}
+\index{PlaySFX@{PlaySFX}!sfxmanager@{sfxmanager}}
+\doxysubsubsection{\texorpdfstring{PlaySFX()}{PlaySFX()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classsfxmanager_af0ed3c5e51f3735fa4566caef1ba1f30} 
+void sfxmanager.\+Play\+SFX (\begin{DoxyParamCaption}\item[{Audio\+Clip}]{clip}{}\end{DoxyParamCaption})}
+
+
+
+Riproduce immediatamente un Audio\+Clip passato come parametro. Utile per riprodurre suoni dinamicamente da codice. 
+
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{dot_inline_dotgraph_8}}
+\end{DoxyImageNoCaption}
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clip} & Clip audio da riprodurre. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{classsfxmanager_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classsfxmanager_a051a21d27d1db43f91c370c04574c1c2}\index{sfxmanager@{sfxmanager}!audioSource@{audioSource}}
+\index{audioSource@{audioSource}!sfxmanager@{sfxmanager}}
+\doxysubsubsection{\texorpdfstring{audioSource}{audioSource}}
+{\footnotesize\ttfamily \label{classsfxmanager_a051a21d27d1db43f91c370c04574c1c2} 
+Audio\+Source sfxmanager.\+audio\+Source\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Riferimento all\textquotesingle{}Audio\+Source associato all\textquotesingle{}oggetto. 
+
+\Hypertarget{classsfxmanager_ab9d080a5aefe41f60257ee78f86059a3}\index{sfxmanager@{sfxmanager}!pitchVariation@{pitchVariation}}
+\index{pitchVariation@{pitchVariation}!sfxmanager@{sfxmanager}}
+\doxysubsubsection{\texorpdfstring{pitchVariation}{pitchVariation}}
+{\footnotesize\ttfamily \label{classsfxmanager_ab9d080a5aefe41f60257ee78f86059a3} 
+float sfxmanager.\+pitch\+Variation = 0.\+1f}
+
+
+
+Valore massimo di variazione del pitch applicato casualmente. 
+
+\Hypertarget{classsfxmanager_a0ecaf5b34238d130b827101ef9363f87}\index{sfxmanager@{sfxmanager}!soundEffect@{soundEffect}}
+\index{soundEffect@{soundEffect}!sfxmanager@{sfxmanager}}
+\doxysubsubsection{\texorpdfstring{soundEffect}{soundEffect}}
+{\footnotesize\ttfamily \label{classsfxmanager_a0ecaf5b34238d130b827101ef9363f87} 
+Audio\+Clip sfxmanager.\+sound\+Effect}
+
+
+
+Clip audio utilizzata come effetto sonoro principale. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/semer/\+Documents/\+Git\+Hub/\+Escape\+Room/\+Assets/scripts/\mbox{\hyperlink{sfxmanager_8cs}{sfxmanager.\+cs}}\end{DoxyCompactItemize}

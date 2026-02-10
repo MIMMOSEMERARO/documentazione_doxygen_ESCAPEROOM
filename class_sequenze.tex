@@ -1,0 +1,139 @@
+\doxysection{Sequenze Class Reference}
+\hypertarget{class_sequenze}{}\label{class_sequenze}\index{Sequenze@{Sequenze}}
+
+
+Gestisce la validazione di una sequenza di oggetti selezionati dall\textquotesingle{}utente. Confronta la sequenza inserita con quella corretta e attiva eventi o messaggi di errore.  
+
+
+
+
+Inheritance diagram for Sequenze\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_sequenze__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sequenze\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_sequenze__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sequenze_ae9a27f912319062c8025546466f664d2}{Confronta\+Sequenze}} (Game\+Object obj)
+\begin{DoxyCompactList}\small\item\em Aggiunge un oggetto alla sequenza corrente e verifica se la sequenza inserita dall\textquotesingle{}utente è corretta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sequenze_a54b860fad1fe688b29af94545afafc59}{Stop\+Messaggio\+Errore}} ()
+\begin{DoxyCompactList}\small\item\em Nasconde il messaggio di errore della sequenza. Metodo richiamato tramite Invoke dopo un ritardo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_sequenze_a38ea2ac56ab746d01691afe986b4d0a0}{lista\+Oggetti}} = new()
+\begin{DoxyCompactList}\small\item\em Lista degli oggetti che rappresentano la sequenza corretta (soluzione). Impostabile dall\textquotesingle{}Inspector. \end{DoxyCompactList}\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_sequenze_a0a91fac1d7dc83866a1233c5bf5542e6}{lista\+Confronto}} = new()
+\begin{DoxyCompactList}\small\item\em Lista temporanea contenente gli oggetti selezionati dall\textquotesingle{}utente. Viene confrontata con la sequenza corretta. \end{DoxyCompactList}\item 
+Unity\+Event \mbox{\hyperlink{class_sequenze_afd66afb6621ec6ccc2077515ff6118e1}{evento\+Fine\+Sequenza}}
+\begin{DoxyCompactList}\small\item\em Evento invocato quando la sequenza inserita è corretta. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_sequenze_a95529c0f293913a9975635ebce93d77d}{Errore\+Sequenza}} = null
+\begin{DoxyCompactList}\small\item\em Game\+Object utilizzato per mostrare un messaggio di errore quando la sequenza è errata. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Gestisce la validazione di una sequenza di oggetti selezionati dall\textquotesingle{}utente. Confronta la sequenza inserita con quella corretta e attiva eventi o messaggi di errore. 
+
+\label{doc-func-members}
+\Hypertarget{class_sequenze_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sequenze_ae9a27f912319062c8025546466f664d2}\index{Sequenze@{Sequenze}!ConfrontaSequenze@{ConfrontaSequenze}}
+\index{ConfrontaSequenze@{ConfrontaSequenze}!Sequenze@{Sequenze}}
+\doxysubsubsection{\texorpdfstring{ConfrontaSequenze()}{ConfrontaSequenze()}}
+{\footnotesize\ttfamily \label{class_sequenze_ae9a27f912319062c8025546466f664d2} 
+void Sequenze.\+Confronta\+Sequenze (\begin{DoxyParamCaption}\item[{Game\+Object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Aggiunge un oggetto alla sequenza corrente e verifica se la sequenza inserita dall\textquotesingle{}utente è corretta. 
+
+Flusso logico del metodo Confronta\+Sequenze\+:
+
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{dot_inline_dotgraph_5}}
+\end{DoxyImageNoCaption}
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Oggetto selezionato dall\textquotesingle{}utente da aggiungere alla sequenza corrente. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sequenze_a54b860fad1fe688b29af94545afafc59}\index{Sequenze@{Sequenze}!StopMessaggioErrore@{StopMessaggioErrore}}
+\index{StopMessaggioErrore@{StopMessaggioErrore}!Sequenze@{Sequenze}}
+\doxysubsubsection{\texorpdfstring{StopMessaggioErrore()}{StopMessaggioErrore()}}
+{\footnotesize\ttfamily \label{class_sequenze_a54b860fad1fe688b29af94545afafc59} 
+void Sequenze.\+Stop\+Messaggio\+Errore (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Nasconde il messaggio di errore della sequenza. Metodo richiamato tramite Invoke dopo un ritardo. 
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_sequenze_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_sequenze_a95529c0f293913a9975635ebce93d77d}\index{Sequenze@{Sequenze}!ErroreSequenza@{ErroreSequenza}}
+\index{ErroreSequenza@{ErroreSequenza}!Sequenze@{Sequenze}}
+\doxysubsubsection{\texorpdfstring{ErroreSequenza}{ErroreSequenza}}
+{\footnotesize\ttfamily \label{class_sequenze_a95529c0f293913a9975635ebce93d77d} 
+Game\+Object Sequenze.\+Errore\+Sequenza = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Game\+Object utilizzato per mostrare un messaggio di errore quando la sequenza è errata. 
+
+\Hypertarget{class_sequenze_afd66afb6621ec6ccc2077515ff6118e1}\index{Sequenze@{Sequenze}!eventoFineSequenza@{eventoFineSequenza}}
+\index{eventoFineSequenza@{eventoFineSequenza}!Sequenze@{Sequenze}}
+\doxysubsubsection{\texorpdfstring{eventoFineSequenza}{eventoFineSequenza}}
+{\footnotesize\ttfamily \label{class_sequenze_afd66afb6621ec6ccc2077515ff6118e1} 
+Unity\+Event Sequenze.\+evento\+Fine\+Sequenza\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Evento invocato quando la sequenza inserita è corretta. 
+
+\Hypertarget{class_sequenze_a0a91fac1d7dc83866a1233c5bf5542e6}\index{Sequenze@{Sequenze}!listaConfronto@{listaConfronto}}
+\index{listaConfronto@{listaConfronto}!Sequenze@{Sequenze}}
+\doxysubsubsection{\texorpdfstring{listaConfronto}{listaConfronto}}
+{\footnotesize\ttfamily \label{class_sequenze_a0a91fac1d7dc83866a1233c5bf5542e6} 
+List$<$Game\+Object$>$ Sequenze.\+lista\+Confronto = new()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lista temporanea contenente gli oggetti selezionati dall\textquotesingle{}utente. Viene confrontata con la sequenza corretta. 
+
+\Hypertarget{class_sequenze_a38ea2ac56ab746d01691afe986b4d0a0}\index{Sequenze@{Sequenze}!listaOggetti@{listaOggetti}}
+\index{listaOggetti@{listaOggetti}!Sequenze@{Sequenze}}
+\doxysubsubsection{\texorpdfstring{listaOggetti}{listaOggetti}}
+{\footnotesize\ttfamily \label{class_sequenze_a38ea2ac56ab746d01691afe986b4d0a0} 
+List$<$Game\+Object$>$ Sequenze.\+lista\+Oggetti = new()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lista degli oggetti che rappresentano la sequenza corretta (soluzione). Impostabile dall\textquotesingle{}Inspector. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/semer/\+Documents/\+Git\+Hub/\+Escape\+Room/\+Assets/scripts/\mbox{\hyperlink{_sequence___manager_8cs}{Sequence\+\_\+\+Manager.\+cs}}\end{DoxyCompactItemize}

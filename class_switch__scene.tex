@@ -1,0 +1,156 @@
+\doxysection{Switch\+\_\+scene Class Reference}
+\hypertarget{class_switch__scene}{}\label{class_switch__scene}\index{Switch\_scene@{Switch\_scene}}
+
+
+Gestisce la transizione di fine livello e il caricamento di una nuova scena tramite un effetto di dissolvenza.  
+
+
+
+
+Inheritance diagram for Switch\+\_\+scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_switch__scene__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Switch\+\_\+scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_switch__scene__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_switch__scene_a5e5210f7a2ea44de97855e28c13a5c95}{Transizione}} ()
+\begin{DoxyCompactList}\small\item\em Avvia la transizione di fine livello mostrando il pannello di vittoria, eseguendo una dissolvenza e caricando la nuova scena. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_switch__scene_abc79ba12ce09b30d4cfc74fae2c5f06b}{e}} = null
+\begin{DoxyCompactList}\small\item\em Game\+Object utilizzato per l\textquotesingle{}effetto di transizione (es. immagine nera). \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_switch__scene_a8865824ac32869d1932f1a9d7ee61528}{pannello\+Vittoria}} = null
+\begin{DoxyCompactList}\small\item\em Pannello di vittoria mostrato prima del cambio scena. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_switch__scene_a014dbb446cfb1b4e06458e2953e17fb4}{nome\+Scena\+Da\+Caricare}} = null
+\begin{DoxyCompactList}\small\item\em Nome della scena da caricare dopo la transizione. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_switch__scene_a0394d3e22e118099c4c3c9eafdc8efcc}{Cambia\+Scena}} ()
+\begin{DoxyCompactList}\small\item\em Carica la scena specificata dal nome. Metodo richiamato tramite Invoke dopo la transizione. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_switch__scene_ab20a526423f762085ab7047f88d9b1b6}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Metodo chiamato una volta all\textquotesingle{}avvio dello script. Attualmente non contiene logica. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_switch__scene_a02476dfc585a4d279bc7db1c780e3ff0}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Metodo chiamato una volta per frame. Attualmente non contiene logica. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Gestisce la transizione di fine livello e il caricamento di una nuova scena tramite un effetto di dissolvenza. 
+
+\label{doc-func-members}
+\Hypertarget{class_switch__scene_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_switch__scene_a0394d3e22e118099c4c3c9eafdc8efcc}\index{Switch\_scene@{Switch\_scene}!CambiaScena@{CambiaScena}}
+\index{CambiaScena@{CambiaScena}!Switch\_scene@{Switch\_scene}}
+\doxysubsubsection{\texorpdfstring{CambiaScena()}{CambiaScena()}}
+{\footnotesize\ttfamily \label{class_switch__scene_a0394d3e22e118099c4c3c9eafdc8efcc} 
+void Switch\+\_\+scene.\+Cambia\+Scena (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Carica la scena specificata dal nome. Metodo richiamato tramite Invoke dopo la transizione. 
+
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{dot_inline_dotgraph_16}}
+\end{DoxyImageNoCaption}
+ \Hypertarget{class_switch__scene_ab20a526423f762085ab7047f88d9b1b6}\index{Switch\_scene@{Switch\_scene}!Start@{Start}}
+\index{Start@{Start}!Switch\_scene@{Switch\_scene}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{class_switch__scene_ab20a526423f762085ab7047f88d9b1b6} 
+void Switch\+\_\+scene.\+Start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metodo chiamato una volta all\textquotesingle{}avvio dello script. Attualmente non contiene logica. 
+
+\Hypertarget{class_switch__scene_a5e5210f7a2ea44de97855e28c13a5c95}\index{Switch\_scene@{Switch\_scene}!Transizione@{Transizione}}
+\index{Transizione@{Transizione}!Switch\_scene@{Switch\_scene}}
+\doxysubsubsection{\texorpdfstring{Transizione()}{Transizione()}}
+{\footnotesize\ttfamily \label{class_switch__scene_a5e5210f7a2ea44de97855e28c13a5c95} 
+void Switch\+\_\+scene.\+Transizione (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Avvia la transizione di fine livello mostrando il pannello di vittoria, eseguendo una dissolvenza e caricando la nuova scena. 
+
+Flusso logico del metodo Transizione\+:
+
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{dot_inline_dotgraph_17}}
+\end{DoxyImageNoCaption}
+ Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_switch__scene_a5e5210f7a2ea44de97855e28c13a5c95_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_switch__scene_a02476dfc585a4d279bc7db1c780e3ff0}\index{Switch\_scene@{Switch\_scene}!Update@{Update}}
+\index{Update@{Update}!Switch\_scene@{Switch\_scene}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_switch__scene_a02476dfc585a4d279bc7db1c780e3ff0} 
+void Switch\+\_\+scene.\+Update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metodo chiamato una volta per frame. Attualmente non contiene logica. 
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_switch__scene_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_switch__scene_abc79ba12ce09b30d4cfc74fae2c5f06b}\index{Switch\_scene@{Switch\_scene}!e@{e}}
+\index{e@{e}!Switch\_scene@{Switch\_scene}}
+\doxysubsubsection{\texorpdfstring{e}{e}}
+{\footnotesize\ttfamily \label{class_switch__scene_abc79ba12ce09b30d4cfc74fae2c5f06b} 
+Game\+Object Switch\+\_\+scene.\+e = null}
+
+
+
+Game\+Object utilizzato per l\textquotesingle{}effetto di transizione (es. immagine nera). 
+
+\Hypertarget{class_switch__scene_a014dbb446cfb1b4e06458e2953e17fb4}\index{Switch\_scene@{Switch\_scene}!nomeScenaDaCaricare@{nomeScenaDaCaricare}}
+\index{nomeScenaDaCaricare@{nomeScenaDaCaricare}!Switch\_scene@{Switch\_scene}}
+\doxysubsubsection{\texorpdfstring{nomeScenaDaCaricare}{nomeScenaDaCaricare}}
+{\footnotesize\ttfamily \label{class_switch__scene_a014dbb446cfb1b4e06458e2953e17fb4} 
+string Switch\+\_\+scene.\+nome\+Scena\+Da\+Caricare = null}
+
+
+
+Nome della scena da caricare dopo la transizione. 
+
+\Hypertarget{class_switch__scene_a8865824ac32869d1932f1a9d7ee61528}\index{Switch\_scene@{Switch\_scene}!pannelloVittoria@{pannelloVittoria}}
+\index{pannelloVittoria@{pannelloVittoria}!Switch\_scene@{Switch\_scene}}
+\doxysubsubsection{\texorpdfstring{pannelloVittoria}{pannelloVittoria}}
+{\footnotesize\ttfamily \label{class_switch__scene_a8865824ac32869d1932f1a9d7ee61528} 
+Game\+Object Switch\+\_\+scene.\+pannello\+Vittoria = null}
+
+
+
+Pannello di vittoria mostrato prima del cambio scena. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/semer/\+Documents/\+Git\+Hub/\+Escape\+Room/\+Assets/scripts/\mbox{\hyperlink{_switch__scene_8cs}{Switch\+\_\+scene.\+cs}}\end{DoxyCompactItemize}
