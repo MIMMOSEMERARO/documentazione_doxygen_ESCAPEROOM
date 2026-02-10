@@ -1,0 +1,5 @@
+<map id="sfxmanager.Awake" name="sfxmanager.Awake">
+<area shape="rect" id="Node000001" title="Inizializzazione del gestore audio. Recupera l&#39;AudioSource e collega automaticamente il metodo PlaySF..." alt="" coords="5,5,139,32"/>
+<area shape="rect" id="Node000002" href="$classsfxmanager.html#af50259142fe2785706950fb8bc1d6dc9" title="Riproduce il suono configurato con una leggera variazione casuale del pitch." alt="" coords="187,5,332,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,16,171,16,171,21,139,21"/>
+</map>

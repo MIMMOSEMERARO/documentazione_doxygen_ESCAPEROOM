@@ -1,0 +1,5 @@
+<map id="VolumeManager.Start" name="VolumeManager.Start">
+<area shape="rect" id="Node000001" title="Inizializza il volume all&#39;avvio caricando i dati salvati." alt="" coords="5,13,152,40"/>
+<area shape="rect" id="Node000002" href="$class_volume_manager.html#a11b426b96719ec5755ece3f5168539f2" title="Converte un valore lineare 0&#45;1 in decibel e lo applica all&#39;AudioMixer." alt="" coords="200,5,404,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,24,184,24,184,29,152,29"/>
+</map>

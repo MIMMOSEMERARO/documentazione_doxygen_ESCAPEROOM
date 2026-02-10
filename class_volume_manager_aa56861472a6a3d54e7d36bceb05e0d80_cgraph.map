@@ -1,0 +1,5 @@
+<map id="VolumeManager.CambiaVolume" name="VolumeManager.CambiaVolume">
+<area shape="rect" id="Node000001" title="Aggiorna il mixer e salva il valore quando lo slider viene mosso. Collegare questo metodo all&#39;evento ..." alt="" coords="5,13,212,40"/>
+<area shape="rect" id="Node000002" href="$class_volume_manager.html#a11b426b96719ec5755ece3f5168539f2" title="Converte un valore lineare 0&#45;1 in decibel e lo applica all&#39;AudioMixer." alt="" coords="260,5,464,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,24,244,24,244,29,212,29"/>
+</map>
